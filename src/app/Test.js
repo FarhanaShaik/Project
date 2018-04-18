@@ -24,7 +24,7 @@ export class Test extends React.Component{
     return(
 
       <div className={displayContainer}>
-
+  
            <div class="form-row">
              <div class="col-md-3 mb-3">
                <label className={labelStyle1}>Annual CTC</label>

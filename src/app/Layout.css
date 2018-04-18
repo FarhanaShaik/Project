@@ -66,8 +66,17 @@ left:6.2vw;
   position:relative;
   bottom:-2vw;
   }
+  .navitemStyleHome{
+  padding-right:8.98vw;
+  position:relative;
+  bottom:-4vw;
+  }
 }
-
+.navitemStyle{
+padding-right:8.85vw;
+position:relative;
+bottom:-2vw;
+}
 .navitemStyleHome{
 padding-right:8.98vw;
 position:relative;
