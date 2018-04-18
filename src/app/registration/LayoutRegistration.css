@@ -1,0 +1,195 @@
+.containerRegistration{
+  background-color:#2C3E50;
+  margin:0 auto;
+  width:100%;
+  min-height:800px;
+  overflow:hidden;
+}
+.logo{
+  font-size:2vw;
+  font-family:serif;
+  color:red;
+  position:relative;
+  left:8vw;
+}
+.text{
+  color:white;
+  position:relative;
+  top:5vw;
+  left:8vw;
+  font-size:1.2vw;
+  font-family:sans-serif;
+}
+.floatingtext{
+  font-size:0.9vw;
+  position:relative;
+  left:63vw;
+  color:#D0D3D4;
+
+}
+#forminput{
+  border-color:#5DADE2   !important;
+  background-color:#2C3E50;
+  box-shadow:none;
+  color:white;
+ width:30%;
+}
+#forminputotp{
+  border-color:#5DADE2   !important;
+  background-color:#2C3E50;
+  box-shadow:none;
+  color:white;
+ width:10%;
+ position:relative;
+ top:3vw;
+ left:8vw;
+ margin-bottom:5vw;
+}
+.registration{
+  position:relative;
+  top:5vw;
+  left:33vw;
+}
+.registrationheader{
+  position:relative;
+  bottom:3vw;
+  left:10vw;
+  color:red;
+  font-size:1vw;
+}
+.lasttext{
+  color:white !important;
+  text-decoration: none !important;
+  position:relative;
+  top:3vw;
+  left:9vw;
+}
+.lasttext1{
+  color:white !important;
+  position:relative;
+  top:4vw;
+  left:5vw;
+  font-size:0.75vw;
+}
+.lasttext2{
+  position:relative;
+  left:8vw;
+}
+.hyperlink1{
+  color:white !important;
+  text-decoration: none !important;
+}
+.otptext{
+  color:white;
+}
+.ptext{
+  position:relative;
+  left:3vw;
+  color:white;
+}
+#submit{
+  position:relative;
+  top:2vw;
+  background-color:#2C3E50;
+    border-color:#5DADE2   !important;
+    width:7%;
+  left:9vw;
+}
+.hyperlink{
+  color:#D0D3D4 !important;
+  text-decoration: none !important;
+}
+.list{
+  position:relative;
+  top:2vw;
+  font-size:0.9vw;
+}
+.rowStyle{
+  position:relative;
+  left:8vw;
+margin-right:20vw;
+}
+.insidefloating{
+  position:relative;
+right:3vw;
+}
+.cardStyle{
+  background-color: #9DB4D2;
+  height:16vw;
+}
+.cardStyle2{
+  background-color: #9DB4D2;
+  height:25vw;
+}
+.featureHeading{
+  color:white;
+  font-size:1.5vw;
+  position:relative;
+  left:3vw;
+}
+.featuretext{
+  position:relative;
+  top:5vw;
+  left:3vw;
+  font-size:1vw;
+  color:white;
+}
+.back{
+  float:right;
+  position:relative;
+  top:5vw;
+  right:15vw;
+  color:white;
+}
+.floatingtext1{
+  font-size:0.9vw;
+  position:relative;
+  bottom:3vw;
+  left:80vw;
+  color:#D0D3D4;
+}
+.insidefloating1{
+    font-size:0.9vw;
+  position:relative;
+  right:3vw;
+}
+.hrStyle{
+  background-color:red;
+  position:relative;
+  top:4vw;
+  left:8vw;
+  margin-right:14.5vw;
+}
+.pagetext{
+  color:#D0D3D4;
+  font-size:0.9vw;
+  font-family:sans-serif;
+  position:relative;
+  top:4vw;
+  left:8vw;
+}
+.content{
+  position:relative;
+  top:4vw;
+}
+.formstyle{
+  position:relative;
+  top:3vw;
+}
+
+
+#viewfeatures{
+  position:relative;
+  top:15vw;
+  left:8vw;
+  background-color:#31496A;
+  border-color:#31496A;
+  color:white;
+  width:14%;
+}
+#submitLink{
+  background-color:#2C3E50 !important;
+    border-color:#5DADE2   !important;
+text-decoration:none !important;
+color:white !important;
+}
