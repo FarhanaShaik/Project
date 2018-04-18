@@ -60,12 +60,14 @@ left:6.2vw;
   position:relative;
   left:5vw;
 }
-.navitemStyle{
-padding-right:8.98vw;
-position:relative;
-bottom:-2vw;
-
+@media screen and (max-width: 1366px) {
+  .navitemStyle{
+  padding-right:7vw;
+  position:relative;
+  bottom:-2vw;
+  }
 }
+
 .navitemStyleHome{
 padding-right:8.98vw;
 position:relative;

@@ -9,7 +9,6 @@ import {dropitem} from "./Home.css";
 export class DepartmentsPage extends React.Component{
   constructor(props) {
     super(props);
-
     this.state = {
       marketing:false,
       it:false,
@@ -25,7 +24,6 @@ financefunc(){
       );
     }
   }
-
   itfunc(){
     if(this.state.it){
        return(
@@ -44,7 +42,6 @@ marketingfunc(){
         );
       }
 }
-
   marketing(){
     this.setState({
 marketing:!this.state.marketing,
