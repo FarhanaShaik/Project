@@ -1,5 +1,10 @@
+
 #dropitem{
   cursor:pointer;
+
+}
+#dropitem:hover{
+  background-color:white !important;
 }
 .cardStyle1{
   height:16vw;

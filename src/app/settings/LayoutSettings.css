@@ -92,11 +92,6 @@
 .floatRight{
   float:right;
 }
-.hrStyle{
-  background-color:#FF9527 !important;
-  margin-top:-1vw;
-  font-size:1vw;
-}
 .hyperLink{
   text-decoration:none !important;
   color:black !important;
@@ -145,10 +140,7 @@
   font-size:0.8vw;
   margin-bottom:-1vw;
 }
-.pageHeading{
-  color:#FF9527;
-  font-size:0.94vw;
-}
+
 #contentStyle{
   margin-top:3vw;
 }

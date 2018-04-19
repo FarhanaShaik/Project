@@ -25,21 +25,16 @@ export class AddRole extends React.Component{
          <Label className={labelStyle}>Role Name</Label>
          <Input className={inputStyle} type="text" name="" id="" placeholder="" />
        </FormGroup>
-
-
         <label className={labelStyle}>Access To Modules</label>
         <select  class="form-control" id={inputstyle1}>
         <option>1</option>
         <option>2</option>
         </select>
-
-
        <FormGroup>
             <Label className={labelStyle}>Description</Label>
             <Input className={textAreaStyle} type="textarea" name="text" id="" />
           </FormGroup>
           <FormGroup>
-
     <div class="row">
       <legend class="col-form-label  col-sm-2 pt-0" style={{fontSize:'0.8vw'}}>Status</legend>
       <div class="col-sm-10" style={{marginLeft:'-8vw',marginTop:'-0.4vw'}}>
@@ -56,16 +51,11 @@ export class AddRole extends React.Component{
           inActive
           </label>
         </div>
-
         </div>
         </div>
         </FormGroup>
           </Form>
-
        <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>Save</Button>
-
-
-
 
       </div>
     );

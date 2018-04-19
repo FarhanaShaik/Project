@@ -2,15 +2,13 @@ import React from "react";
 import {render} from "react-dom";
 import { Button, Form, FormGroup, Label, Input, FormText,Row } from 'reactstrap';
 import {Link} from "react-router-dom";
-import DatePicker from 'material-ui/DatePicker';
+import {DatePicker,TextField,Slider} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import TextField from 'material-ui/TextField';
 import Icon from 'react-icons-kit';
-import { plus } from 'react-icons-kit/icomoon/plus';
-import Slider from 'material-ui/Slider';
-import {displayContainer} from "../Layout.css";
+
+import {displayContainer,hrStyle,pageHeading} from "../Layout.css";
 import {dateStyle} from "../employee/LayoutEmployee.css";
-import {pageHeading,hrStyle,labelStyle,textAreaStyle,inputstyle,formStyle,inputStyle,hyperLink,floatRight,
+import {labelStyle,textAreaStyle,inputstyle,formStyle,inputStyle,hyperLink,floatRight,
   inputStyle1,labelStyle1,dropDownInputStyle,buttonstyle,divStyle,boxText,imageText,imageInput,iconStyle} from "./LayoutSettings.css";
 
  export class CompanyDetails extends React.Component{

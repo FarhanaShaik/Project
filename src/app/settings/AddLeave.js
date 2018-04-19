@@ -1,17 +1,14 @@
 import React from "react";
 import {render} from "react-dom";
 import { Button, Form, FormGroup, Label, Input, FormText,Row } from 'reactstrap';
-import DatePicker from 'material-ui/DatePicker';
+import {DatePicker,TextField,Slider} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Container} from "semantic-ui-react";
-import TextField from 'material-ui/TextField';
-import Icon from 'react-icons-kit';
-import { plus } from 'react-icons-kit/icomoon/plus';
 
+import Icon from 'react-icons-kit';
 import {Link} from "react-router-dom";
-import Slider from 'material-ui/Slider';
-import {displayContainer} from "../Layout.css";
-import {pageHeading,hrStyle,labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
+
+import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
+import {labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
 labelStyle1,dropDownInputStyle,buttonstyle,divStyle,radioStyle1,hyperLink,floatRight,
 boxText,imageText,radioStyle,labelStyleRadio,imageInput,iconStyle} from "./LayoutSettings.css";
 

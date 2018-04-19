@@ -4,6 +4,7 @@ import {displayContainer} from "../Layout.css";
 import {Marketing} from "./Marketing";
 import {InformationTechnology} from "./InformationTechnology";
 import {Finance} from "./Finance";
+import {All} from "./All";
 import {dropitem} from "./Home.css";
 
 export class DepartmentsPage extends React.Component{
@@ -12,7 +13,8 @@ export class DepartmentsPage extends React.Component{
     this.state = {
       marketing:false,
       it:false,
-      finance:false
+      finance:false,
+      all:false
     };
   }
 financefunc(){
@@ -42,38 +44,52 @@ marketingfunc(){
         );
       }
 }
+allfunc(){
+  if(this.state.all){
+    return(
+      <div>
+      <All/>
+      </div>
+    )
+  }
+}
   marketing(){
     this.setState({
 marketing:!this.state.marketing,
 it:false,
-finance:false
+finance:false,
+all:false
     });
   }
   it(){
     this.setState({
 it:!this.state.it,
 marketing:false,
-finance:false
+finance:false,
+all:false
     });
   }
 finance(){
     this.setState({
 finance:!this.state.finance,
 marketing:false,
-it:false
+it:false,
+all:false
     });
   }
   all(){
     this.setState({
-      finance:true,
-      marketing:true,
-      it:true
+      finance:false,
+      marketing:false,
+      it:false,
+      all:true
     })
   }
   render(){
     var marketing=this.marketingfunc();
     var it=this.itfunc();
     var finance=this.financefunc();
+    var all=this.allfunc();
     return(
       <div className={displayContainer}>
       DepartmentsPage
@@ -82,16 +98,17 @@ it:false
           Select Department
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item"><span onClick={this.marketing.bind(this)} id={dropitem}>Marketing</span></a>
-          <a class="dropdown-item"><span onClick={this.it.bind(this)} id={dropitem}>Information Technology</span></a>
-          <a class="dropdown-item"><span onClick={this.finance.bind(this)} id={dropitem}>Finance</span></a>
-          <a class="dropdown-item"><span onClick={this.all.bind(this)} id={dropitem}>All</span></a>
+          <a class="dropdown-item" id={dropitem}><span onClick={this.marketing.bind(this)} >Marketing</span></a>
+          <a class="dropdown-item" id={dropitem}><span onClick={this.it.bind(this)} >Information Technology</span></a>
+          <a class="dropdown-item" id={dropitem}><span onClick={this.finance.bind(this)} >Finance</span></a>
+          <a class="dropdown-item" id={dropitem}><span onClick={this.all.bind(this)} >All</span></a>
         </div>
       </div>
 
       {marketing}
       {it}
       {finance}
+      {all}
 
 
 

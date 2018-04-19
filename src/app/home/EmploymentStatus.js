@@ -6,6 +6,7 @@ import {Absent} from "./Absent";
 import {OnLeave} from "./OnLeave";
 import {Late} from "./Late";
 import {Overtime} from "./Overtime";
+import {All} from "./All";
 
 export class EmploymentStatus extends React.Component{
   constructor(props) {
@@ -16,7 +17,8 @@ export class EmploymentStatus extends React.Component{
       absent:false,
       onleave:false,
       late:false,
-      overtime:false
+      overtime:false,
+      all:false
     }
   }
   presentfunc(){
@@ -51,6 +53,13 @@ export class EmploymentStatus extends React.Component{
     if(this.state.overtime){
       return(
         <div> <Overtime/></div>
+      )
+    }
+  }
+  allfunc(){
+    if(this.state.all){
+      return(
+        <div> <All/></div>
       )
     }
   }
@@ -102,11 +111,12 @@ export class EmploymentStatus extends React.Component{
   }
   allstate(){
     this.setState({
-      overtime:true,
-        late:true,
-        present:true,
-        absent:true,
-       onleave:true
+      overtime:false,
+        late:false,
+        present:false,
+        absent:false,
+       onleave:false,
+       all:true
     })
   }
   render(){
@@ -115,7 +125,7 @@ export class EmploymentStatus extends React.Component{
     var onleave = this.onleavefunc();
     var late = this.latefunc();
     var overtime = this.overtimefunc();
-
+    var all = this.allfunc();
     return(
   <div className={displayContainer}>Employee status
   <div class="dropdown">
@@ -123,12 +133,12 @@ export class EmploymentStatus extends React.Component{
       Select Employee status
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" onClick={this.presentstate.bind(this)} id={dropitem}>Present</a>
-      <a class="dropdown-item" onClick={this.absentstate.bind(this)} id={dropitem}>Absent</a>
-      <a class="dropdown-item" onClick={this.onleavestate.bind(this)} id={dropitem}>On Leave</a>
-      <a class="dropdown-item" onClick={this.latestate.bind(this)} id={dropitem}>Late</a>
-      <a class="dropdown-item" onClick={this.overtimestate.bind(this)} id={dropitem}>Overtime</a>
-      <a class="dropdown-item" onClick={this.allstate.bind(this)} id={dropitem}>All</a>
+  <a class="dropdown-item" id={dropitem} onClick={this.presentstate.bind(this)} >Present</a>
+      <a class="dropdown-item" id={dropitem} onClick={this.absentstate.bind(this)} >Absent</a>
+      <a class="dropdown-item" id={dropitem} onClick={this.onleavestate.bind(this)} >On Leave</a>
+      <a class="dropdown-item" id={dropitem} onClick={this.latestate.bind(this)} >Late</a>
+      <a class="dropdown-item" id={dropitem} onClick={this.overtimestate.bind(this)} >Overtime</a>
+      <a class="dropdown-item" id={dropitem} onClick={this.allstate.bind(this)} >All</a>
 
     </div>
   </div>
@@ -137,6 +147,7 @@ export class EmploymentStatus extends React.Component{
   {onleave}
   {late}
   {overtime}
+  {all}
 
 
   </div>

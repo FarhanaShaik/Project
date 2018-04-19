@@ -1,22 +1,19 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, FormText,Row } from 'reactstrap';
-import DatePicker from 'material-ui/DatePicker';
+import {DatePicker,Slider,TextField} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import TextField from 'material-ui/TextField';
 import Icon from 'react-icons-kit';
-import { plus, arrowLeft2, arrowRight2,pencil,search} from 'react-icons-kit/icomoon';
+import {arrowLeft2, arrowRight2,pencil,search} from 'react-icons-kit/icomoon';
 import {Link} from "react-router-dom";
-import Slider from 'material-ui/Slider';
-import {contentHeading} from "../projects/Projects.css";
 import { ic_create,ic_delete } from 'react-icons-kit/md';
-import {textAreaStyle,tableDiv,addNewDepartmentStyle,dropDownInputStyle,divStyle,
+import {addNewDepartmentStyle,dropDownInputStyle,
   boxText,imageText,contentStyle} from "../settings/LayoutSettings.css";
-import {displayContainer,arrowIcon,tableinput,contentStyle1,right} from "../Layout.css";
-import {hyperLinkEmployee,hrStyle,btnManual,btnAuto} from "./LayoutEmployee.css";
+import {displayContainer,arrowIcon,tableinput,contentStyle1,right,hrStyle} from "../Layout.css";
+import {hyperLinkEmployee,btnManual,btnAuto} from "./LayoutEmployee.css";
 import {pageHeading,labelStyle,inputstyle,formStyle,inputStyle,floatRight,enableBtn,disableBtn,
   inputStyle1,labelStyle1,buttonstyle,overtimeDiv,iconStyle} from "./LayoutSettings.css";
-  import {Manual} from "./Manual";
-  import {Auto} from "./Auto";
+import {Manual} from "./Manual";
+import {Auto} from "./Auto";
 
 export class BankDetails extends React.Component{
   constructor(props) {
@@ -58,7 +55,6 @@ export class BankDetails extends React.Component{
 var manualcomponents = this.manualdisplay();
 var autocomponents = this.autodisplay();
     return(
-
        <div className={displayContainer}>
 <p className={pageHeading}>Bank Details</p>
 <hr className={hrStyle}/>
@@ -108,7 +104,7 @@ var autocomponents = this.autodisplay();
           </div>
 </Form>
 <p className={pageHeading} style={{marginTop:'2vw'}}>Salary Component</p>
-<hr className={hrStyle}/>
+
 <div class="form-row">
   <div class="col-md-3 mb-3">
     <label className={labelStyle1}>Annual CTC</label>

@@ -1,5 +1,7 @@
 import React from "react";
-import {displayContainer,pageHeading,hrStyle,formStyle,labelStyle1,inputstyle,inputStyle,labelStyle,buttonstyle} from "../settings/LayoutSettings.css";
+import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
+import {
+  formStyle,labelStyle1,inputstyle,inputStyle,labelStyle,buttonstyle} from "../settings/LayoutSettings.css";
 import {Form,FormGroup, Label, Input,Button} from "reactstrap";
 export class Profile extends React.Component{
   render() {
@@ -36,7 +38,7 @@ export class Profile extends React.Component{
     <Label className={labelStyle}>Email ID</Label>
     <Input className={inputStyle} type="text" name="" id="" placeholder="" />
   </FormGroup>
-  <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
+  <Button className="btn btn-outline-warning btn-sm" id={buttonstyle}>
   Save</Button>
   <p style={{marginTop:'1vw',fontWeight:'bold'}}>Change Password</p>
   <div class="form-row">
@@ -49,7 +51,7 @@ export class Profile extends React.Component{
   <input type="text" class="form-control" id={inputstyle}/>
   </div>
   </div>
-  <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
+  <Button className="btn btn-outline-warning btn-sm" id={buttonstyle}>
   Save</Button>
 </Form>
 

@@ -1,18 +1,14 @@
 import React  from "react";
-import {Container} from "reactstrap";
 import { Button, Form, FormGroup, Label, Input, FormText,Row } from 'reactstrap';
-import DatePicker from 'material-ui/DatePicker';
+import {DatePicker,TextField,Slider} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import $ from "jquery";
 import {moment} from "moment";
 import {Link} from "react-router-dom";
-import TextField from 'material-ui/TextField';
 import TimePicker from 'rc-time-picker';
 import Icon from 'react-icons-kit';
-import { plus } from 'react-icons-kit/icomoon/plus';
-import Slider from 'material-ui/Slider';
-import {displayContainer} from "../Layout.css";
-import {pageHeading,hrStyle,labelStyle,inputstyle,formStyle,inputStyle,textAreaStyle,hyperLink,floatRight,
+
+import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
+import {labelStyle,inputstyle,formStyle,inputStyle,textAreaStyle,hyperLink,floatRight,
   inputStyle1,labelStyle1,dropDownInputStyle,buttonstyle,divStyle,boxText,imageText,imageInput,iconStyle} from "./LayoutSettings.css";
 export class AttendanceSettings extends React.Component {
   render() {
