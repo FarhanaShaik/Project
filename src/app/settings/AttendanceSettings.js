@@ -10,10 +10,14 @@ import Icon from 'react-icons-kit';
 import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
 import {labelStyle,inputstyle,formStyle,inputStyle,textAreaStyle,hyperLink,floatRight,
   inputStyle1,labelStyle1,dropDownInputStyle,buttonstyle,divStyle,boxText,imageText,imageInput,iconStyle} from "./LayoutSettings.css";
+  import {Header1} from "../Header1";
+  import {Footer} from "../Footer";
 export class AttendanceSettings extends React.Component {
   render() {
 
     return(
+      <div>
+      <Header1/>
              <div className={displayContainer}>
       <p className={pageHeading}>Attendance</p>
       <hr className={hrStyle}/>
@@ -80,16 +84,10 @@ export class AttendanceSettings extends React.Component {
                inActive
                </label>
              </div>
-
              </div>
              </div>
              </FormGroup>
                  </Form>
-
-
-
-
-
 
               <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
               <Link to="/ViewShiftAttendance" className={hyperLink}>Save</Link></Button>
@@ -101,10 +99,8 @@ export class AttendanceSettings extends React.Component {
               <Link to="/AddLeave" className={hyperLink}>Skip this</Link></Button>
 
 
-
-
-
-
+             </div>
+             <Footer/>
              </div>
 
 

@@ -3,9 +3,13 @@ import {displayContainer,orange,exampletable} from "../Layout.css";
 import {hrStyle,pageHeading} from "../Layout.css";
 import Icon from 'react-icons-kit';
 import { ic_create,ic_delete  } from 'react-icons-kit/md';
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 export class AnnouncementList extends React.Component{
   render(){
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
       <p><span className={pageHeading}>Announcements</span></p>
       <hr className={hrStyle}/>
@@ -37,6 +41,8 @@ export class AnnouncementList extends React.Component{
 
       </table>
 
+      </div>
+      <Footer/>
       </div>
     );
 

@@ -8,10 +8,14 @@ import {cardText,displayContainer,cardTitle,
 import {pageHeading} from "../projects/Projects.css";
 import {Link} from "react-router-dom";
 import {CardTemplate} from "./CardTemplate";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class NewJoiners extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p>Home>><span className={pageHeading}>New Joiners</span></p>
 <hr className={hrStyle}/>
@@ -51,6 +55,8 @@ export class NewJoiners extends React.Component{
 </div>
 
 
+  </div>
+  <Footer/>
   </div>
     );
   }

@@ -21,7 +21,7 @@ export class CreatePassword extends React.Component{
     <input type="password" class="form-control" id={forminput}  aria-describedby="emailHelp" placeholder="Confirm"/>
   </div>
   <button type="submit" class="btn btn-primary" id={submit}>
-  <Link to="/VerifyAccount" id={submitLink}>Submit</Link>
+  <Link to="/FirstPage" id={submitLink}>Submit</Link>
   </button>
 </form>
 

@@ -15,12 +15,14 @@ import {displayContainer,arrowIcon} from "../Layout.css";
 import {hrStyle,hyperLinkEmployee,dateStyle} from "./LayoutEmployee.css";
 import {pageHeading,labelStyle,inputstyle,formStyle,inputStyle,floatRight,enableBtn,disableBtn,
   inputStyle1,labelStyle1,buttonstyle,divStyle,overtimeDiv,boxText,imageText,imageInput,iconStyle} from "./LayoutSettings.css";
-
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class JobHistory extends React.Component{
   render() {
     return(
-
+  <div>
+  <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Job History</p>
 <hr className={hrStyle}/>
@@ -88,8 +90,10 @@ export class JobHistory extends React.Component{
        <Icon icon={arrowRight2} className={arrowIcon} size={14} /></Link>
   </span>
           </div>
-
        </div>
+       <Footer/>
+       </div>
+
      );
    }
  }

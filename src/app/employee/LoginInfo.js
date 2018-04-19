@@ -13,9 +13,13 @@ import {displayContainer,arrowIcon} from "../Layout.css";
 import {hrStyle,hyperLinkEmployee,slideremp} from "./LayoutEmployee.css";
 import {pageHeading,labelStyle,inputstyle,formStyle,inputStyle,floatRight,enableBtn,disableBtn,
   inputStyle1,labelStyle1,buttonstyle,divStyle,overtimeDiv,boxText,imageText,imageInput,iconStyle} from "./LayoutSettings.css";
+  import {Header1} from "../Header1";
+  import {Footer} from "../Footer";
 export class LoginInfo extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
        <div className={displayContainer}>
 <p className={pageHeading}>Login Information</p>
 <hr className={hrStyle}/>
@@ -69,6 +73,8 @@ export class LoginInfo extends React.Component{
              <Icon icon={arrowRight2} className={arrowIcon} size={14} /></Link>
         </span>
 </div>
+       </div>
+       <Footer/>
        </div>
      );
    }

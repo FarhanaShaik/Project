@@ -14,12 +14,14 @@ import {displayContainer,arrowIcon} from "../Layout.css";
 import {pageHeading,labelStyle,inputstylefile,formStyle,inputStyle,floatRight,enableBtn,disableBtn,
   inputStyle1,inputstyle,labelStyle1,buttonstyle,divStyle,overtimeDiv,boxText,imageText,imageInput,iconStyle}
   from "./LayoutSettings.css";
+  import {Header1} from "../Header1";
+  import {Footer} from "../Footer";
 
 export class EmpDocs extends React.Component{
   render() {
     return(
-
-
+<div>
+<Header1/>
        <div className={displayContainer}>
 <p className={pageHeading}>Employee Documents</p>
 <hr className={hrStyle}/>
@@ -50,22 +52,17 @@ export class EmpDocs extends React.Component{
         </Row>
         <button class="btn btn-outline-warning"  id={buttonstyle}>Submit</button>
 
-
 </Form>
-
 
 <div style={{marginTop:'10vw'}}>
 <Link to="/JobHistory" className={hyperLinkEmployee} style={{position:'relative',top:'0.5vw',left:'0.5vw'}}>Skip</Link>
-
      <span className={floatRight}>
-
      <Link to="/JobHistory" className={hyperLinkEmployee} style={{marginRight:'1vw'}}>
        <Icon icon={arrowLeft2} className={arrowIcon} size={14}  />Previous</Link>
-
   </span>
-
           </div>
-
+       </div>
+       <Footer/>
        </div>
      );
    }

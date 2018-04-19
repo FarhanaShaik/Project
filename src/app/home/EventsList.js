@@ -6,10 +6,14 @@ import Icon from 'react-icons-kit';
 
   import { filter,search  } from 'react-icons-kit/fa';
 import { ic_create,ic_delete  } from 'react-icons-kit/md';
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class EventsList extends React.Component{
   render(){
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 
       <p className={pageHeading}>Events
@@ -44,7 +48,8 @@ export class EventsList extends React.Component{
       </tr>
       </tbody>
       </table>
-
+      </div>
+      <Footer/>
       </div>
     );
 

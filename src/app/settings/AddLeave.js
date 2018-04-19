@@ -11,11 +11,15 @@ import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
 import {labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
 labelStyle1,dropDownInputStyle,buttonstyle,divStyle,radioStyle1,hyperLink,floatRight,
 boxText,imageText,radioStyle,labelStyleRadio,imageInput,iconStyle} from "./LayoutSettings.css";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class AddLeave extends React.Component{
   render() {
 
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Leaves</p>
 <hr className={hrStyle}/>
@@ -100,6 +104,8 @@ export class AddLeave extends React.Component{
 
 
 
+      </div>
+      <Footer/>
       </div>
     );
   }

@@ -8,10 +8,14 @@ import { smallRight } from 'react-icons-kit/entypo/';
 import {pageHeading,pageHeader,hrStyle,arrow,orange,floatRight} from "../Layout.css";
 import {Link} from "react-router-dom";
 import {CardTemplate} from "./CardTemplate";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class ViewEmployee extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeader}>Home<span className={arrow}>></span><span className={pageHeading}>
 Employee List<span  className={floatRight}> <Icon icon={search} /><Icon icon={filter} /></span></span></p>
@@ -75,6 +79,8 @@ Employee List<span  className={floatRight}> <Icon icon={search} /><Icon icon={fi
 
 </div>
 <p className={pagination}><span className={orange}>1</span> 2 3 4 5 ></p>
+  </div>
+  <Footer/>
   </div>
     );
   }

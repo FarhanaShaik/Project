@@ -8,10 +8,15 @@ import { ic_create,ic_delete } from 'react-icons-kit/md';
 import {pageHeading,hrStyle,contentStyle,floatRight,hyperLink,orange} from "../Layout.css";
 import {labelStyle2,inputstyle,modalbutton,savebtn,labelStyle1} from "./LayoutAdmin.css";
 import {displayContainer} from "../employee/LayoutSettings.css";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class AdminUsers extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
+
       <div className={displayContainer}>
 <p><span className={pageHeading}>Admin Users</span><span className={floatRight}><Icon icon={search}/></span></p>
 <hr className={hrStyle}/>
@@ -107,6 +112,8 @@ export class AdminUsers extends React.Component{
 
      </tbody>
      </table>
+      </div>
+      <Footer/>
       </div>
     );
   }

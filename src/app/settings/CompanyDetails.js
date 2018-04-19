@@ -5,15 +5,18 @@ import {Link} from "react-router-dom";
 import {DatePicker,TextField,Slider} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Icon from 'react-icons-kit';
-
 import {displayContainer,hrStyle,pageHeading} from "../Layout.css";
 import {dateStyle} from "../employee/LayoutEmployee.css";
 import {labelStyle,textAreaStyle,inputstyle,formStyle,inputStyle,hyperLink,floatRight,
   inputStyle1,labelStyle1,dropDownInputStyle,buttonstyle,divStyle,boxText,imageText,imageInput,iconStyle} from "./LayoutSettings.css";
+  import {Header1} from  "../Header1";
+  import {Footer} from "../Footer";
 
  export class CompanyDetails extends React.Component{
    render() {
      return(
+       <div>
+       <Header1/>
        <div className={displayContainer}>
 <p className={pageHeading}>Organization Details</p>
 <hr className={hrStyle}/>
@@ -120,8 +123,8 @@ import {labelStyle,textAreaStyle,inputstyle,formStyle,inputStyle,hyperLink,float
                         <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
                         <Link to="/AttendanceSettings" className={hyperLink}>Save</Link></Button>
           </Form>
-
-
+       </div>
+       <Footer/>
        </div>
      );
    }

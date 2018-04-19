@@ -3,9 +3,13 @@ import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
 import {
   formStyle,labelStyle1,inputstyle,inputStyle,labelStyle,buttonstyle} from "../settings/LayoutSettings.css";
 import {Form,FormGroup, Label, Input,Button} from "reactstrap";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 export class Profile extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
   <div className={displayContainer}>
   <p className={pageHeading}>Profile Settings</p>
   <hr className={hrStyle}/>
@@ -55,6 +59,8 @@ export class Profile extends React.Component{
   Save</Button>
 </Form>
 
+  </div>
+  <Footer/>
   </div>
     );
 

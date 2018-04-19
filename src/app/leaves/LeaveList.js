@@ -1,23 +1,22 @@
 import React from "react";
-import {render} from "react-dom";
+
 import { Button, Form, FormGroup, Label, Input, FormText,Row } from 'reactstrap';
-
 import Icon from 'react-icons-kit';
-
-import { bin } from 'react-icons-kit/icomoon/bin';
+import { bin,search  } from 'react-icons-kit/icomoon';
 import {Link} from "react-router-dom";
-import { search } from 'react-icons-kit/icomoon/search';
-import { ic_delete } from 'react-icons-kit/md/ic_delete';
- import { ic_create } from 'react-icons-kit/md/ic_create';
 
+import { ic_delete,ic_create  } from 'react-icons-kit/md';
 import {displayContainer,pageHeading,hrStyle,labelStyle,inputstyle,hyperLink,formStyle,inputStyle,textAreaStyle,tableDiv,
   inputStyle1,labelStyle1,addNewDepartmentStyle,floatRight,verticalLine,dropDownInputStyle,buttonstyle,divStyle,radioStyle1,
   boxText,imageText,radioStyle,labelStyleRadio,imageInput,contentStyle,iconStyle,activeStyle,orange} from "../Layout.css";
-
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class LeaveList extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Leave List<span className={floatRight}><Icon icon={search}/></span></p>
 <hr className={hrStyle}/>
@@ -51,6 +50,8 @@ export class LeaveList extends React.Component{
      </tr>
      </tbody>
      </table>
+      </div>
+      <Footer/>
       </div>
     );
   }

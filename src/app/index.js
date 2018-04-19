@@ -1,16 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
 import {HashRouter as Router, Route,Link} from "react-router-dom";
-import { Header1 } from "./Header1";
 import {Home} from "./home/Home";
 import {EmploymentStatus} from "./home/EmploymentStatus";
 import {EventsList} from "./home/EventsList";
 import {AnnouncementList} from "./home/AnnouncementList";
 import {DepartmentsPage} from "./home/DepartmentsPage";
-import { Footer } from "./Footer";
 import {Attendance} from "./Attendance";
 import {AttendanceSettings} from "./settings/AttendanceSettings";
-import {Payroll} from "./payroll/Payroll";
 import {Payments} from "./payroll/Payments";
 import {Process} from "./payroll/Process";
 import {Statement} from "./payroll/Statement";
@@ -39,6 +36,7 @@ import {ViewFeature1} from "./registration/ViewFeature1";
 import {SignUp} from "./registration/SignUp";
 import {VerifyAccount} from "./registration/VerifyAccount";
 import {CreatePassword} from "./registration/CreatePassword";
+import {Login} from "./registration/Login";
 import {AddEmployee} from "./employee/AddEmployee";
 import {PersonalDetails} from "./employee/PersonalDetails";
 import {ProfessionalDetails} from "./employee/ProfessionalDetails";
@@ -60,23 +58,23 @@ export class App extends React.Component {
     return (
   <Router>
       <div >
-      <Header1/>
+
       <Route path="/LoginPage" component={LoginPage}/>
 <Route path="/CreatePassword" component={CreatePassword}/>
 <Route path="/ViewFeatures" component={ViewFeatures}/>
 <Route path="/ViewFeature1" component={ViewFeature1}/>
-<Route path="/SignUp" component={SignUp}/><Route path="/VerifyAccount" component={VerifyAccount}/>
+<Route path="/SignUp" component={SignUp}/>
+<Route path="/VerifyAccount" component={VerifyAccount}/>
+<Route path="/Login" component={Login}/>
               <Route path="/Home" component={Home}/>
               <Route path="/EmploymentStatus" component={EmploymentStatus}/>
               <Route path="/Leaves" component={LeaveList}/>
               <Route path="/EditLeave" component={EditLeave}/>
               <Route path="/LeaveTypes" component={LeaveTypes}/>
               <Route path="/Attendance" component={Attendance}/>
-
               <Route path="/EventsList" component={EventsList}/>
               <Route path="/NewJoiners" component={NewJoiners}/>
               <Route path="/Leavers" component={Leavers}/>
-              <Route path="/Payroll" component={Payroll}/>
               <Route path="/Payments" component={Payments}/>
               <Route path="/Process" component={Process}/>
               <Route path="/Statement" component={Statement}/>
@@ -109,7 +107,7 @@ export class App extends React.Component {
               <Route path="/EmpDocs" component={EmpDocs}/>
               <Route path="/AdminUsers" component={AdminUsers}/>
               <Route path="/FirstPage" component={FirstPage}/>
-            <Footer/>
+
      </div>
 </Router>
 

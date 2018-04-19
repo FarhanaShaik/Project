@@ -19,10 +19,14 @@ import { bin2 } from 'react-icons-kit/icomoon/bin2';
 import { glass2 } from 'react-icons-kit/icomoon/glass2';
 import { ic_delete } from 'react-icons-kit/md/ic_delete';
 import { eye } from 'react-icons-kit/icomoon/eye';
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class Statement extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Statement</p>
 <hr className={hrStyle}/>
@@ -73,6 +77,8 @@ export class Statement extends React.Component{
      </tr>
      </tbody>
      </table>
+      </div>
+      <Footer/>
       </div>
     );
   }

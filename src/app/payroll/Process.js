@@ -7,14 +7,18 @@ import {Container} from "semantic-ui-react";
 import TextField from 'material-ui/TextField';
 import Icon from 'react-icons-kit';
 import { plus } from 'react-icons-kit/icomoon/plus';
-import {displayContainer} from "../Layout.css";
-import {pageHeading,hrStyle,labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
+import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
+import {labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
 labelStyle1,dropDownInputStyle,buttonstyle,checkboxDiv,divStyle,radioStyle1,boxText,imageText,radioStyle,
 labelStyleRadio,imageInput,iconStyle} from "../settings/LayoutSettings.css";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class Process extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Process</p>
 <hr className={hrStyle}/>
@@ -44,6 +48,8 @@ export class Process extends React.Component{
           </Form>
     <button className="btn btn-outline-warning btn-sm" id={buttonstyle}>Process</button>
     <button className="btn btn-outline-warning btn-sm" id={buttonstyle}>Cancel</button>
+      </div>
+      <Footer/>
       </div>
     );
   }

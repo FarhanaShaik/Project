@@ -14,6 +14,8 @@ import {pageHeading,labelStyle,inputstyle,formStyle,inputStyle,floatRight,enable
   inputStyle1,labelStyle1,buttonstyle,overtimeDiv,iconStyle} from "./LayoutSettings.css";
 import {Manual} from "./Manual";
 import {Auto} from "./Auto";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class BankDetails extends React.Component{
   constructor(props) {
@@ -55,6 +57,8 @@ export class BankDetails extends React.Component{
 var manualcomponents = this.manualdisplay();
 var autocomponents = this.autodisplay();
     return(
+      <div>
+      <Header1/>
        <div className={displayContainer}>
 <p className={pageHeading}>Bank Details</p>
 <hr className={hrStyle}/>
@@ -135,6 +139,8 @@ var autocomponents = this.autodisplay();
           <Link to="/LoginInfo" className={hyperLinkEmployee}>Next
             <Icon icon={arrowRight2} className={arrowIcon} size={14} /></Link>
        </span>
+       </div>
+       <Footer/>
        </div>
      );
    }

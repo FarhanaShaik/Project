@@ -9,6 +9,8 @@ import Icon from 'react-icons-kit';
 import { plus } from 'react-icons-kit/icomoon/plus';
 import $ from "jquery";
 import {Link} from "react-router-dom";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 import {displayContainer,pageHeading,hrStyle,labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
 labelStyle1,dropDownInputStyle,buttonstyle,divStyle,radioStyle1,hyperLink,
@@ -18,6 +20,8 @@ export class EditLeave extends React.Component{
   render() {
 
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p>Leaves & Time>><span className={pageHeading} onClick={this.handle}></span>Leaves</p>
 <p id="click"></p>
@@ -74,17 +78,13 @@ export class EditLeave extends React.Component{
 <option>Pending</option>
 </select>
 
-
-
-
           </Form>
 
        <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
        <Link to="/Leaves" className={hyperLink}>Save</Link></Button>
 
-
-
-
+      </div>
+      <Footer/>
       </div>
     );
   }

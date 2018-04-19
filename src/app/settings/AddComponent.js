@@ -9,10 +9,13 @@ import {displayContainer,pageHeading,hrStyle} from "../Layout.css";
 import {labelStyle,inputstyle1,formStyle,inputStyle,inputstyle,textAreaStyle,
 labelStyle1,dropDownInputStyle,buttonstyle,checkboxDiv,divStyle,radioStyle1,boxText,imageText,radioStyle,hyperLink,floatRight,
 labelStyleRadio,imageInput,iconStyle} from "./LayoutSettings.css";
-
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 export class AddComponent extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Salary Components</p>
 <hr className={hrStyle}/>
@@ -108,19 +111,13 @@ export class AddComponent extends React.Component{
 </div>
         </div>
         </FormGroup>
-
           </Form>
-
        <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
        <Link to="/ViewSalaryComponents" className={hyperLink}>Save</Link></Button>
        <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
        <Link to="/AddLeave" className={hyperLink}>Back</Link></Button>
-
-
-
-
-
-
+      </div>
+      <Footer/>
       </div>
     );
   }

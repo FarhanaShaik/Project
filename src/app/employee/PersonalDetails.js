@@ -1,20 +1,22 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, FormText,Row,Col } from 'reactstrap';
-import DatePicker from 'material-ui/DatePicker';
+import {DatePicker,TextField,Slider} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Container} from "semantic-ui-react";
-import TextField from 'material-ui/TextField';
 import Icon from 'react-icons-kit';
-import { plus } from 'react-icons-kit/icomoon/plus';
-import { arrowRight2 } from 'react-icons-kit/icomoon/arrowRight2';
+import { plus,arrowRight2 } from 'react-icons-kit/icomoon';
 import {Link} from "react-router-dom";
-import Slider from 'material-ui/Slider';
 import {displayContainer,floatRight,arrowIcon} from "../Layout.css";
 import {pageHeading,hrStyle,labelStyle,inputstyle,formStyle,inputStyle,
   inputStyle1,labelStyle1,buttonstyle,hyperLinkEmployee,slideremp} from "./LayoutEmployee.css";
+  import {Header1} from "../Header1";
+  import {Footer} from "../Footer";
+
 export class PersonalDetails extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
+
        <div className={displayContainer}>
 <p className={pageHeading}>Personal Details</p>
 <hr className={hrStyle}/>
@@ -101,9 +103,9 @@ export class PersonalDetails extends React.Component{
           <span className={floatRight}><Link to="/ProfessionalDetails" className={hyperLinkEmployee}>Next
           <Icon icon={arrowRight2} size={14} className={arrowIcon} /></Link></span>
           <div>
-
-
           </div>
+       </div>
+       <Footer/>
        </div>
      );
    }

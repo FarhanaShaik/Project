@@ -6,6 +6,8 @@ import {InformationTechnology} from "./InformationTechnology";
 import {Finance} from "./Finance";
 import {All} from "./All";
 import {dropitem} from "./Home.css";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class DepartmentsPage extends React.Component{
   constructor(props) {
@@ -91,6 +93,8 @@ all:false
     var finance=this.financefunc();
     var all=this.allfunc();
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
       DepartmentsPage
       <div class="dropdown">
@@ -104,14 +108,12 @@ all:false
           <a class="dropdown-item" id={dropitem}><span onClick={this.all.bind(this)} >All</span></a>
         </div>
       </div>
-
       {marketing}
       {it}
       {finance}
       {all}
-
-
-
+      </div>
+      <Footer/>
       </div>
     );
   }

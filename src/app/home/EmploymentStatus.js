@@ -7,6 +7,8 @@ import {OnLeave} from "./OnLeave";
 import {Late} from "./Late";
 import {Overtime} from "./Overtime";
 import {All} from "./All";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class EmploymentStatus extends React.Component{
   constructor(props) {
@@ -69,7 +71,8 @@ export class EmploymentStatus extends React.Component{
       present:false,
       onleave:false,
       late:false,
-      overtime:false
+      overtime:false,
+      all:false
     });
   }
   presentstate(){
@@ -78,7 +81,8 @@ export class EmploymentStatus extends React.Component{
       absent:false,
       onleave:false,
       late:false,
-      overtime:false
+      overtime:false,
+      all:false
     });
   }
   onleavestate(){
@@ -87,7 +91,8 @@ export class EmploymentStatus extends React.Component{
       present:false,
       absent:false,
       late:false,
-      overtime:false
+      overtime:false,
+      all:false
     })
   }
   latestate(){
@@ -96,7 +101,8 @@ export class EmploymentStatus extends React.Component{
       present:false,
       absent:false,
      onleave:false,
-      overtime:false
+      overtime:false,
+      all:false
     })
   }
   overtimestate(){
@@ -105,7 +111,8 @@ export class EmploymentStatus extends React.Component{
         late:false,
         present:false,
         absent:false,
-       onleave:false
+       onleave:false,
+       all:false
 
     })
   }
@@ -127,6 +134,8 @@ export class EmploymentStatus extends React.Component{
     var overtime = this.overtimefunc();
     var all = this.allfunc();
     return(
+      <div>
+      <Header1/>
   <div className={displayContainer}>Employee status
   <div class="dropdown">
     <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -148,8 +157,8 @@ export class EmploymentStatus extends React.Component{
   {late}
   {overtime}
   {all}
-
-
+  </div>
+  <Footer/>
   </div>
     );
   }

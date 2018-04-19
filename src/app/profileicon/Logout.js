@@ -1,5 +1,7 @@
 import React from "react";
 import {Container} from "reactstrap";
+import {Header1} from "../Header1";
+import {Footer} from "../Footer";
 
 export class Logout extends React.Component {
   yes(){
@@ -12,13 +14,15 @@ export class Logout extends React.Component {
   render() {
 
     return(
+      <div>
+      <Header1/>
       <Container style={{height:'43.5vw'}}>
        <p style={{margin:'15vw 10vw -12vw 27vw'}}>Do you want to Log out??</p>
-
    <button onClick={this.yes} type="button" class="btn btn-success" style={{margin:'15vw 0vw 0vw 27vw'}}>Yes</button>
    <button onClick={this.no} type="button" class="btn btn-danger" style={{margin:'15vw 0vw 0vw 5vw'}}>No</button>
-
-      </Container>
+    </Container>
+      <Footer/>
+      </div>
     );
   }
 }

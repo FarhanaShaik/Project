@@ -13,9 +13,13 @@ import {displayContainer,pageHeading,hrStyle,labelStyle,inputstyle,hyperLink,for
   inputStyle1,labelStyle1,addNewDepartmentStyle,floatRight,verticalLine,dropDownInputStyle,buttonstyle,divStyle,radioStyle1,
   boxText,imageText,radioStyle,labelStyleRadio,imageInput,contentStyle,iconStyle,activeStyle,orange} from "./Layout.css";
 import { ic_create ,ic_delete } from 'react-icons-kit/md';
+import {Header1} from "./Header1";
+import {Footer} from "./Footer";
 export class Attendance extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
       <div className={displayContainer}>
 <p className={pageHeading}>Attendance<span className={floatRight}></span></p>
 <hr className={hrStyle}/>
@@ -42,6 +46,8 @@ export class Attendance extends React.Component{
      </tr>
      </tbody>
      </table>
+      </div>
+      <Footer/>
       </div>
     );
   }

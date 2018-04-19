@@ -10,9 +10,13 @@ import {displayContainer,floatRight,arrowIcon} from "../Layout.css";
 import {pageHeading,hrStyle,labelStyle,inputstyle,formStyle,inputStyle,
   inputStyle1,labelStyle1,buttonstyle,hyperLinkEmployee,enableBtn,disableBtn,
   overtimeDiv,slideremp,dateStyle} from "./LayoutEmployee.css";
+  import {Header1} from "../Header1";
+  import {Footer} from "../Footer";
 export class ProfessionalDetails extends React.Component{
   render() {
     return(
+      <div>
+      <Header1/>
        <div className={displayContainer}>
 <p className={pageHeading}>Professional Details</p>
 <hr className={hrStyle}/>
@@ -131,10 +135,9 @@ export class ProfessionalDetails extends React.Component{
                <Icon icon={arrowLeft2} className={arrowIcon} size={14} />Prev </Link>
              <Link to="/BankDetails" className={hyperLinkEmployee}>Next
                <Icon icon={arrowRight2} className={arrowIcon} size={14}/></Link>
-
           </span>
-
-
+       </div>
+       <Footer/>
        </div>
      );
    }
