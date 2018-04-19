@@ -2,8 +2,15 @@
   background-color:#2C3E50;
   margin:0 auto;
   width:100%;
-  min-height:800px;
-  overflow:hidden;
+height:800px;
+}
+@media screen and (max-width: 1366px) {
+  .containerRegistration{
+    background-color:#2C3E50;
+    margin:0 auto;
+    width:100%;
+  height:600px;
+  }
 }
 .logo{
   font-size:2vw;
@@ -177,13 +184,12 @@ right:3vw;
   top:3vw;
 }
 
-
 #viewfeatures{
   position:relative;
   top:15vw;
   left:8vw;
   background-color:#31496A;
-  border-color:#31496A;
+  border-color:white;
   color:white;
   width:14%;
 }
