@@ -114,6 +114,7 @@ height:800px;
 .rowStyle{
   position:relative;
   left:8vw;
+  top:7vw;
 margin-right:20vw;
 }
 .insidefloating{
@@ -122,11 +123,11 @@ right:3vw;
 }
 .cardStyle{
   background-color: #9DB4D2;
-  height:16vw;
+  height:18vw;
 }
 .cardStyle2{
   background-color: #9DB4D2;
-  height:25vw;
+  height:18vw;
 }
 .featureHeading{
   color:white;
@@ -144,7 +145,7 @@ right:3vw;
 .back{
   float:right;
   position:relative;
-  top:5vw;
+  top:10vw;
   right:15vw;
   color:white;
 }
@@ -188,8 +189,8 @@ right:3vw;
   position:relative;
   top:15vw;
   left:8vw;
-  background-color:#31496A;
-  border-color:white;
+  background-color:#2C3E50 ;
+  border-color:white !important;
   color:white;
   width:14%;
 }
