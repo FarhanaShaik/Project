@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 import {Header1} from "./Header1";
 import {Footer} from "./Footer";
 
-export class FirstPage extends React.Component{
+export class DemoPage extends React.Component{
   render() {
     return(
  <div>

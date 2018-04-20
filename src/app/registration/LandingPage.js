@@ -5,14 +5,14 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Link} from "react-router-dom";
 import {LogoHeader} from "./LogoHeader";
 import {containerRegistration,logo,text,hrStyle,content,floatingtext1,insidefloating1,pagetext,viewfeatures,hyperlink }from "./LayoutRegistration.css";
-export class LoginPage extends React.Component{
+export class LandingPage extends React.Component{
   render()
   {
     return(
       <div className={containerRegistration}>
       <div className={content}>
 <LogoHeader/>
-<p className={text}>HUMAN RESOURCE MANAGEMENT</p>
+<p className={text}>Human Resource Management</p>
 
 <hr className={hrStyle} />
 <p className={pagetext}>An easy assign-and-schedule mechanism for a 360-degree overview on your workforce</p>

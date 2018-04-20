@@ -1,6 +1,6 @@
 import React from "react";
 import {LogoHeader} from "./LogoHeader";
-import {containerRegistration,content,registrationheader,registration,forminput,submit,lasttext,hyperlink1,submitLink} from "./LayoutRegistration.css";
+import {containerRegistration,content,registrationheader,registration,forminput,submit,lasttext,hyperlink,submitLink} from "./LayoutRegistration.css";
 import {Link} from "react-router-dom";
 
 export class SignUp extends React.Component{
@@ -26,7 +26,7 @@ export class SignUp extends React.Component{
   <Link to="/VerifyAccount" id={submitLink}>Submit</Link>
   </button>
 </form>
-<p className={lasttext}>Existing user? <Link to="/Login" className={hyperlink1}>Login</Link></p>
+<p className={lasttext}>Existing user? <Link to="/Login" className={hyperlink}>Log In</Link></p>
       </div>
       </div>
       </div>

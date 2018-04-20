@@ -71,6 +71,29 @@ left:6.2vw;
   position:relative;
   bottom:-7vw;
   }
+  .exploreCard1{
+    width:18%;
+    height:7vw;
+    background-color:#039BE5;
+    text-align: center;
+    color:white;
+    padding-top:0.5vw;
+    margin-top:-1.5vw;
+    margin-left:30vw;
+    margin-bottom:10vw;
+  }
+
+  .exploreCard2{
+    width:18%;
+    height:7vw;
+    background-color:white;
+    text-align:center;
+    padding-top:0.3vw;
+    color:#039BE5;
+    margin-top:-1.5vw;
+    margin-left:6vw;
+    margin-bottom:10vw;
+  }
 }
 .navitemStyle{
 padding-right:8.85vw;
@@ -84,22 +107,23 @@ bottom:-3vw;
 }
 .upperNav{
 position:relative;
-bottom:4vw;
+bottom:3.7vw;
+left:-4.5vw;
 right:5vw;
 }
 .upperNavIcon{
   position:relative;
-  bottom:2.8vw;
+  bottom:2.6vw;
   right:4.8vw;
 }
 .settingsIcon{
   position:relative;
-  bottom:2.85vw;
+  bottom:2.6vw;
   right:7vw;
 }
 .notificationIcon{
   position:relative;
-  bottom:3.7vw;
+  bottom:3.5vw;
 right:9vw;
 }
 .cardimgleft {
@@ -116,6 +140,19 @@ margin-top:-1vw;
  background-color:#FFFFFF;
  border:none;
  box-shadow:-0.01px 3px 1px 0.1px grey;
+}
+.footerText{
+  color:white;
+  font-size:0.7vw;
+  position:relative;
+  right:30vw;
+
+}
+.footerSpan{
+  color:white;
+  font-size:0.7vw;
+  position:relative;
+  left:70vw;
 }
 #imgStyle{
   margin-left:0.5vw;

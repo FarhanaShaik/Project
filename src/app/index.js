@@ -16,21 +16,17 @@ import {ExpenseList} from "./expenses/ExpenseList";
 import {Test} from "./Test";
 import {CompanyDetails} from "./settings/CompanyDetails";
 import {Departments} from "./settings/Departments";
-import {Designations} from "./settings/Designations";
-import {Locations} from "./settings/Locations";
 import {ViewDepartment} from "./settings/ViewDepartment";
-import {RolesAndPermissions} from "./settings/RolesAndPermissions";
-import {AddRole} from "./settings/AddRole";
 import {ViewShiftAttendance} from "./settings/ViewShiftAttendance";
-import {Logout} from "./profileicon/Logout";
 import {Profile} from "./profileicon/Profile";
+import {Logout} from "./profileicon/Logout";
 import {LeaveList} from "./leaves/LeaveList";
 import {EditLeave} from "./leaves/EditLeave";
 import {LeaveTypes} from "./settings/LeaveTypes";
 import {AddLeave} from "./settings/AddLeave";
 import {ViewSalaryComponents} from "./settings/ViewSalaryComponents";
 import {AddComponent} from "./settings/AddComponent";
-import {LoginPage} from "./registration/LoginPage";
+import {LandingPage} from "./registration/LandingPage";
 import {ViewFeatures} from "./registration/ViewFeatures";
 import {ViewFeature1} from "./registration/ViewFeature1";
 import {SignUp} from "./registration/SignUp";
@@ -48,7 +44,7 @@ import {ViewEmployee} from "./employee/ViewEmployee";
 import {NewJoiners} from "./employee/NewJoiners";
 import {Leavers} from "./employee/Leavers";
 import {AdminUsers} from "./admin/AdminUsers";
-import {FirstPage} from "./FirstPage";
+import {DemoPage} from "./DemoPage";
 //import {Calendar1} from "./components/Calendar";
 //import "../styles.css";
 //import styles from "../styles.css";
@@ -59,7 +55,7 @@ export class App extends React.Component {
   <Router>
       <div >
 
-      <Route path="/LoginPage" component={LoginPage}/>
+      <Route path="/LandingPage" component={LandingPage}/>
 <Route path="/CreatePassword" component={CreatePassword}/>
 <Route path="/ViewFeatures" component={ViewFeatures}/>
 <Route path="/ViewFeature1" component={ViewFeature1}/>
@@ -87,12 +83,8 @@ export class App extends React.Component {
               <Route path="/CompanyDetails" component={CompanyDetails}/>
               <Route path="/AttendanceSettings" component={AttendanceSettings}/>
               <Route path="/Departments" component={Departments}/>
-              <Route path="/Designations" component={Designations}/>
-              <Route path="/Locations" component={Locations}/>
               <Route path="/ViewDepartment" component={ViewDepartment}/>
-              <Route path="/RolesAndPermissions" component={RolesAndPermissions}/>
               <Route path="/ViewShiftAttendance" component={ViewShiftAttendance}/>
-              <Route path="/AddRole" component={AddRole}/>
               <Route path="/AddLeave" component={AddLeave}/>
               <Route path="/ViewSalaryComponents" component={ViewSalaryComponents}/>
               <Route path="/AddComponent" component={AddComponent}/>
@@ -106,8 +98,7 @@ export class App extends React.Component {
               <Route path="/JobHistory" component={JobHistory}/>
               <Route path="/EmpDocs" component={EmpDocs}/>
               <Route path="/AdminUsers" component={AdminUsers}/>
-              <Route path="/FirstPage" component={FirstPage}/>
-
+              <Route path="/DemoPage" component={DemoPage}/>
      </div>
 </Router>
 
