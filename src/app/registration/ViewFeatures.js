@@ -1,5 +1,5 @@
 import React from "react";
-import {containerRegistration,content,rowStyle,cardStyle,back} from "./LayoutRegistration.css";
+import {containerRegistration,content,rowStyle,cardStyle,back,imgStyle} from "./LayoutRegistration.css";
 import {Row,Col,Card} from "reactstrap";
 import Icon from 'react-icons-kit';
 import { thinLeft } from 'react-icons-kit/entypo/thinLeft';
@@ -17,17 +17,15 @@ export class ViewFeatures extends React.Component{
       <Row className={rowStyle}>
       <Col>
       <Link to="/ViewFeature1">
-      <Card className={cardStyle}>
-    
-      </Card>
+      <img class="animated slideInUp" src={require('../gogles.jpg')} id={imgStyle} />
       </Link>
       </Col>
       <Col>
-      <Card className={cardStyle}>Welcome</Card></Col>
+      <img class="animated slideInDown" src={require('../lady.jpg')} id={imgStyle} /></Col>
       <Col>
-      <Card className={cardStyle}>Acsestech</Card></Col>
+      <img class="animated slideInDown" src={require('../photo1.jpg')} id={imgStyle} /></Col>
       </Row>
-      <Link to="LoginPage"><p className={back}><Icon icon={thinLeft} size={20} style={{position:'relative',top:'0.4vw'}} />Back</p></Link>
+      <Link to="LandingPage"><p className={back}><Icon icon={thinLeft} size={20} style={{position:'relative',top:'0.4vw'}} />Back</p></Link>
       </div>
       </div>
     );

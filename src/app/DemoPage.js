@@ -33,7 +33,7 @@ export class DemoPage extends React.Component{
      <Link to="/Home" className={hyperLinkLogin1}>
      <CardTitle>
         </CardTitle>
-     <CardText >
+     <CardText>
      Explore Demo Company</CardText>
     </Link>
      </Card>

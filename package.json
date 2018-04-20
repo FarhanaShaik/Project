@@ -17,6 +17,7 @@
     "bulma": "^0.7.0",
     "jquery": "^3.3.1",
     "material-ui": "^0.20.0",
+    "mdbootstrap": "^4.5.1",
     "moment": "^2.21.0",
     "rc-calendar": "^9.6.0",
     "rc-time-picker": "^3.3.1",

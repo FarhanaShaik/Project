@@ -6,7 +6,7 @@ import Icon from 'react-icons-kit';
 import { thinLeft } from 'react-icons-kit/entypo/thinLeft';
 import {Link} from "react-router-dom";
 
-export class ViewFeature1 extends React.Component{
+export class ViewFeature2 extends React.Component{
   render(){
     return(
       <div className={containerRegistration}>
