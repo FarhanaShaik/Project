@@ -12,7 +12,7 @@ export class LoginPage extends React.Component{
       <div className={containerRegistration}>
       <div className={content}>
 <LogoHeader/>
-<p className={text}>Human Resource Management</p>
+<p className={text}>HUMAN RESOURCE MANAGEMENT</p>
 
 <hr className={hrStyle} />
 <p className={pagetext}>An easy assign-and-schedule mechanism for a 360-degree overview on your workforce</p>
