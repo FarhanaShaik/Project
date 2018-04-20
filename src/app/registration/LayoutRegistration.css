@@ -9,7 +9,7 @@ height:800px;
     background-color:#2C3E50;
     margin:0 auto;
     width:100%;
-  height:650px;
+  height:663px;
   }
 }
 .logo{
@@ -30,6 +30,7 @@ height:800px;
 .floatingtext{
   font-size:0.9vw;
   position:relative;
+  bottom:2vw;
   left:63vw;
   color:#D0D3D4;
 
