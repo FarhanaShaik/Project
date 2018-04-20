@@ -128,7 +128,7 @@ var autocomponents = this.autodisplay();
 </div>
 {manualcomponents}
 {autocomponents}
-    <button class="btn btn-outline-warning"  id={buttonstyle}>
+    <button class="btn btn-outline-warning"  >
      <Link to="/LoginInfo" className={hyperLinkEmployee}>Save</Link></button>
      <Link to="/LoginInfo" className={hyperLinkEmployee} style={{position:'relative',top:'0.5vw',left:'0.5vw'}}>Skip</Link>
 

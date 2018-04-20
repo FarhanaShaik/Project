@@ -120,8 +120,8 @@ import {labelStyle,textAreaStyle,inputstyle,formStyle,inputStyle,hyperLink,float
                   <input type="text" class="form-control" id={inputstyle} placeholder="" />
                 </div>
                 </div>
-                        <Button className="btn btn-outline-primary btn-sm" id={buttonstyle}>
-                        <Link to="/AttendanceSettings" className={hyperLink}>Save</Link></Button>
+                        <button type="button" class="btn btn-outline-warning waves-effect" >
+                        <Link to="/AttendanceSettings" id={hyperLink}>Save</Link></button>
           </Form>
        </div>
        <Footer/>

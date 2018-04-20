@@ -29,6 +29,9 @@ import {AddComponent} from "./settings/AddComponent";
 import {LandingPage} from "./registration/LandingPage";
 import {ViewFeatures} from "./registration/ViewFeatures";
 import {ViewFeature1} from "./registration/ViewFeature1";
+import {ViewFeature2} from "./registration/ViewFeature2";
+import {ViewFeature3} from "./registration/ViewFeature3";
+import {ViewFeature4} from "./registration/ViewFeature4";
 import {SignUp} from "./registration/SignUp";
 import {VerifyAccount} from "./registration/VerifyAccount";
 import {CreatePassword} from "./registration/CreatePassword";
@@ -59,6 +62,9 @@ export class App extends React.Component {
 <Route path="/CreatePassword" component={CreatePassword}/>
 <Route path="/ViewFeatures" component={ViewFeatures}/>
 <Route path="/ViewFeature1" component={ViewFeature1}/>
+<Route path="/ViewFeature2" component={ViewFeature2}/>
+<Route path="/ViewFeature3" component={ViewFeature3}/>
+<Route path="/ViewFeature4" component={ViewFeature4}/>
 <Route path="/SignUp" component={SignUp}/>
 <Route path="/VerifyAccount" component={VerifyAccount}/>
 <Route path="/Login" component={Login}/>

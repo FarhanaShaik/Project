@@ -142,7 +142,7 @@ margin-top:-1vw;
  box-shadow:-0.01px 3px 1px 0.1px grey;
 }
 .footerText{
-  color:white;
+  color:white !important;
   font-size:0.7vw;
   font-family:sans-serif;
   position:relative;
@@ -166,7 +166,7 @@ margin-top:-1vw;
   width:66%;
   margin-left:15vw;
 }
-.hyperLink:hover{
+#hyperLink:hover{
   color:orange !important;
 }
 .hyperLinkLogo{
@@ -179,12 +179,13 @@ margin-top:-1vw;
 .hyperLinkLogin1{
   color:#039BE5 !important;
 }
-.hyperLink{
+#hyperLink{
   text-decoration:none !important;
   color:white !important;
 }
-.dropItem{
+#dropItem{
   color:white !important;
+  background-color:#2C3E50 !important;
   position:relative;
   top:0.7vw;
   padding-bottom:0.7vw;
@@ -224,8 +225,6 @@ margin-top:-1vw;
   min-height:5.5vw;
   overflow:hidden;
   text-align:center;
-
-
 }
 
 #tableinput{

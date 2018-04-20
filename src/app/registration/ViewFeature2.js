@@ -5,33 +5,37 @@ import {Row,Col,Card} from "reactstrap";
 import Icon from 'react-icons-kit';
 import { thinLeft } from 'react-icons-kit/entypo/thinLeft';
 import {Link} from "react-router-dom";
+import {FooterText} from "./FooterText";
 
 export class ViewFeature2 extends React.Component{
   render(){
     return(
+      <div>
       <div className={containerRegistration}>
       <div className={content}>
       <LogoHeader/>
       <Row className={rowStyle}>
         <Col xs="4">
-        <img class="animated slideInUp" src={require('../gogles.jpg')} id={imgStyle} />
+        <img class="animated slideInUp" src={require('../lady.jpg')} id={imgStyle} />
         </Col>
       <Col>
       <p id={featureHeading} class="animated slideInRight">
-      Time and Attendance
+      Employee Management
       </p>
       <p id={featuretext} class="animated fadeInLeft">
-      Streamline your end-to-end processes and productivity
+    Employees are your most valuable assets.
       <ul className={list}>
-  <li> Automate your rules and calculations to reduce compliance risks</li>
-  <li> Eliminate manual time entries and redundant processes</li>
-  <li> Avoid costly, time-consuming integrations</li>
+  <li>Choosing the right employees during the hiring process.</li>
+  <li> Determining how well an employee is performing or meeting goals.</li>
+  <li> Result of excellent employee performance is Company{'/'}s growth.</li>
 </ul>
       </p>
       </Col>
       </Row>
         <Link to="ViewFeatures"><p className={back}><Icon icon={thinLeft} size={20} style={{position:'relative',top:'0.4vw'}} />Back</p></Link>
       </div>
+      </div>
+      <FooterText/>
       </div>
     );
   }

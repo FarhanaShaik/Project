@@ -5,16 +5,18 @@ import {Row,Col,Card} from "reactstrap";
 import Icon from 'react-icons-kit';
 import { thinLeft } from 'react-icons-kit/entypo/thinLeft';
 import {Link} from "react-router-dom";
+import {FooterText} from "./FooterText";
 
 export class ViewFeature1 extends React.Component{
   render(){
     return(
+      <div>
       <div className={containerRegistration}>
       <div className={content}>
       <LogoHeader/>
       <Row className={rowStyle}>
         <Col xs="4">
-        <img class="animated slideInUp" src={require('../gogles.jpg')} id={imgStyle} />
+        <img class="animated slideInUp" src={require('../timeandattendance.jpg')} id={imgStyle} />
         </Col>
       <Col>
       <p id={featureHeading} class="animated slideInRight">
@@ -32,7 +34,10 @@ export class ViewFeature1 extends React.Component{
       </Row>
         <Link to="ViewFeatures"><p className={back}><Icon icon={thinLeft} size={20} style={{position:'relative',top:'0.4vw'}} />Back</p></Link>
       </div>
+
       </div>
+<FooterText/>
+</div>
     );
   }
 }

@@ -6,10 +6,11 @@ export class LogoHeader extends React.Component{
   render(){
     return(
       <div>
-      <Link to="/LoginPage"><h1 className={logo}>H<span style={{color:'white'}}>rms</span></h1></Link>
+      <Link to="/LandingPage"><h1 className={logo}>H<span style={{color:'white'}}>rms</span></h1></Link>
       <p className={floatingtext1}>
       <span className={insidefloating1}><Link to="/Login" className={hyperlink}>Log In</Link></span>
       <span><Link to="/SignUp" className={hyperlink}>Sign Up</Link></span>
+
       </p>
       </div>
     );
