@@ -144,15 +144,16 @@ margin-top:-1vw;
 .footerText{
   color:white;
   font-size:0.7vw;
+  font-family:sans-serif;
   position:relative;
-  right:30vw;
+  right:39.5vw;
 
 }
 .footerSpan{
   color:white;
   font-size:0.7vw;
   position:relative;
-  left:70vw;
+  left:76.7vw;
 }
 #imgStyle{
   margin-left:0.5vw;
@@ -300,11 +301,15 @@ padding-top:-1.5vw;
     min-height:600px;
     overflow: hidden;
 }
+.copyrighticon{
+position:relative;
+top:0.27vw;
+}
 .exploreDiv{
   width:100%;
   height:20vw;
   background-color:#ECEFF1;
-  margin-top:28vw;
+  margin-top:23vw;
   margin-bottom:-5vw;
 }
 .divStyle{

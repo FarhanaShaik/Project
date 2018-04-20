@@ -4,6 +4,7 @@ import {Card,CardText,CardTitle,Row} from "reactstrap";
   import Icon from 'react-icons-kit';
 import { plus,compass2  } from 'react-icons-kit/icomoon';
 import { ic_explore } from 'react-icons-kit/md/ic_explore';
+import { plusSquare } from 'react-icons-kit/fa/plusSquare';
 import {Link} from "react-router-dom";
 import {Header1} from "./Header1";
 import {Footer} from "./Footer";
@@ -20,10 +21,8 @@ export class DemoPage extends React.Component{
      <Card className={exploreCard1}>
      <Link to="/CompanyDetails" className={hyperLinkLogin}>
      <CardTitle>
-         <Icon icon={plus} size={30} className={iconStyle}/>
          </CardTitle>
          <CardText>
-
      Add Company
 
      </CardText>
@@ -33,10 +32,8 @@ export class DemoPage extends React.Component{
      <Card className={exploreCard2}>
      <Link to="/Home" className={hyperLinkLogin1}>
      <CardTitle>
-
-          <Icon icon={ic_explore} size={45}  className={iconStyle}/>
         </CardTitle>
-     <CardText style={{marginTop:'-0.7vw'}}>
+     <CardText >
      Explore Demo Company</CardText>
     </Link>
      </Card>
