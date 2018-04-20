@@ -15,7 +15,7 @@ export class Test extends React.Component{
     return(
 
       <div className={displayContainer}>
-
+<p class="animated bounce infinite">Welcome</p>
 
       </div>
     );
