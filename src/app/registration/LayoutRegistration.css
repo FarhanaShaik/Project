@@ -10,8 +10,28 @@ overflow:hidden;
     background-color:#2C3E50;
     margin:0 auto;
     width:100%;
-  min-height:662px;
+  min-height:642.5px;
   overflow:hidden;
+  }
+  .formstyle{
+    position:relative;
+    top:3vw;
+    left:3vw;
+  }
+  #submit{
+    position:relative;
+    top:2vw;
+    background-color:#2C3E50 !important;
+    border:0.5px solid #B6E3EF;
+    width:9%;
+    left:10.9vw;
+  }
+  .hrStyle{
+    background-color:red;
+    position:relative;
+    top:4vw;
+    left:8vw;
+    margin-right:13.2vw;
   }
 }
 .logo{
@@ -233,6 +253,7 @@ bottom:1.8vw;
 .formstyle{
   position:relative;
   top:3vw;
+  left:2vw;
 }
 #viewfeatures{
   position:relative;
