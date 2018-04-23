@@ -4,10 +4,12 @@ import {containerRegistration,content,registrationheader,registration,
   forminputotp,submit,submitLink,lasttext1,lasttext2,hyperlink1,otptext} from "./LayoutRegistration.css";
 import {Link} from "react-router-dom";
 import {Row} from "reactstrap";
+import {FooterText} from "./Footertext";
 
 export class VerifyAccount extends React.Component{
   render(){
     return(
+      <div>
       <div className={containerRegistration}>
       <div className={content}>
       <LogoHeader/>
@@ -20,13 +22,15 @@ export class VerifyAccount extends React.Component{
 </div>
 </form>
 
-  <button type="submit" class="btn btn-primary" id={submit}>
-<Link to="/CreatePassword" id={submitLink}>Submit</Link>
-  </button>
+  <Link to="/CreatePassword" ><button type="submit" class="btn btn-light" id={submit}>
+Submit
+  </button></Link>
 
-<p className={lasttext1}>Resend OTP<span className={lasttext2}>Change Number</span></p>
+<p className={lasttext1}>Resend OTP<span ><Link to="/SignUp" className={lasttext2}>Change Number</Link></span></p>
       </div>
       </div>
+      </div>
+      <FooterText/>
       </div>
     );
   }

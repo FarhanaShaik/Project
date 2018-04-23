@@ -3,10 +3,12 @@ import {LogoHeader} from "./LogoHeader";
 import {containerRegistration,content,ptext,
   registrationheader,registration,forminput,formstyle,submit,lasttext,hyperlink1,submitLink} from "./LayoutRegistration.css";
 import {Link} from "react-router-dom";
+import {FooterText} from "./FooterText";
 
 export class CreatePassword extends React.Component{
   render(){
     return(
+      <div>
       <div className={containerRegistration}>
       <div className={content}>
       <LogoHeader/>
@@ -20,13 +22,15 @@ export class CreatePassword extends React.Component{
   <div class="form-group">
     <input type="password" class="form-control" id={forminput}  aria-describedby="emailHelp" placeholder="Confirm"/>
   </div>
-  <button type="submit" class="btn btn-primary" id={submit}>
-  <Link to="/FirstPage" id={submitLink}>Submit</Link>
-  </button>
+  <Link to="/DemoPage"><button type="submit" class="btn btn-primary" id={submit}>
+  Submit
+  </button></Link>
 </form>
 
       </div>
       </div>
+      </div>
+      <FooterText/>
       </div>
     );
   }
