@@ -76,7 +76,7 @@ left:6.2vw;
   .navitemStyleHome{
   padding-right:8.98vw;
   position:relative;
-  top:10vw;
+  top:5vw;
   }
   .exploreCard1{
     width:18%;
@@ -153,7 +153,6 @@ margin-top:-1vw;
   font-family:sans-serif;
   position:relative;
   right:39.5vw;
-
 }
 .footerSpan{
   color:white;
@@ -179,12 +178,7 @@ margin-top:-1vw;
   color:white !important;
   text-decoration:none !important;
 }
-.hyperLinkLogin{
-  color:white !important;
-}
-.hyperLinkLogin1{
-  color:#039BE5 !important;
-}
+
 #hyperLink{
   text-decoration:none !important;
   color:white !important;
@@ -432,7 +426,7 @@ padding-left:0.5vw;
   height:6vw;
   background-color:#039BE5;
   text-align: center;
-  color:white;
+  color:white !important;
   padding-top:0.5vw;
   margin-top:-1.5vw;
   margin-left:30vw;
@@ -445,7 +439,7 @@ padding-left:0.5vw;
   background-color:white;
   text-align:center;
   padding-top:0.3vw;
-  color:#039BE5;
+  color:#039BE5 !important;
   margin-top:-1.5vw;
   margin-left:6vw;
   margin-bottom:10vw;

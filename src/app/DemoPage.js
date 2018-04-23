@@ -17,26 +17,28 @@ export class DemoPage extends React.Component{
 
      <div className={exploreDiv}>
      <Row>
-
+<Link to="/CompanyDetails" >
      <Card className={exploreCard1}>
-     <Link to="/CompanyDetails" className={hyperLinkLogin}>
+
      <CardTitle>
          </CardTitle>
          <CardText>
      Add Company
 
      </CardText>
-       </Link>
-     </Card>
 
+     </Card>
+     </Link>
+<Link to="/Home" >
      <Card className={exploreCard2}>
-     <Link to="/Home" className={hyperLinkLogin1}>
+
      <CardTitle>
         </CardTitle>
      <CardText>
      Explore Demo Company</CardText>
-    </Link>
+
      </Card>
+     </Link>
      </Row>
      </div>
 
