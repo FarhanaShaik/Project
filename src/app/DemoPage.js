@@ -1,5 +1,6 @@
 import React from "react";
-import {displayContainer,exploreDiv,exploreCard1,exploreCard2,iconStyle,hyperLinkLogin,hyperLinkLogin1} from "./Layout.css";
+import {displayContainer,exploreDiv,hello,
+  exploreCard1,exploreCard2,iconStyle,hyperLinkLogin,hyperLinkLogin1} from "./Layout.css";
 import {Card,CardText,CardTitle,Row} from "reactstrap";
   import Icon from 'react-icons-kit';
 import { plus,compass2  } from 'react-icons-kit/icomoon';
@@ -17,28 +18,19 @@ export class DemoPage extends React.Component{
 
      <div className={exploreDiv}>
      <Row>
-<Link to="/CompanyDetails" >
-     <Card className={exploreCard1}>
+     <Link to="/CompanyDetails" >
+          <Card className={exploreCard1}>
 
-     <CardTitle>
-         </CardTitle>
-         <CardText>
-     Add Company
+      <CardText>Add Company</CardText>
+          </Card>
+          </Link>
+     <Link to="/Home">
+          <Card  className={exploreCard2}>
 
-     </CardText>
-
-     </Card>
-     </Link>
-<Link to="/Home" >
-     <Card className={exploreCard2}>
-
-     <CardTitle>
-        </CardTitle>
-     <CardText>
-     Explore Demo Company</CardText>
-
-     </Card>
-     </Link>
+          <CardTitle>
+          Explore Demo Company</CardTitle>
+          </Card>
+          </Link>
      </Row>
      </div>
 
